@@ -1,9 +1,9 @@
-        class Fecha{
+export default class Fecha{
             constructor(dia, mes, año){
                 this.fecha = new Date(año, mes - 1, dia)
                 this.fecha2 = new Date
                 this.Mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
- 
+                this.dia = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
             }
             getAños(){
                 let lapso =  this.fecha2.getUTCFullYear() - this.fecha.getFullYear()   
@@ -39,15 +39,12 @@
                         return (` ${(lapso)*28} DIAS`)
                 }
             } 
-            getFecha(){
-
+            getFecha3(){
+                return `${this.fecha.getDate()} / ${this.Mes[this.fecha.getMonth()]} / ${this.fecha.getUTCFullYear()}`
             }
             getDiaFecha(){
-                
+                return`${this.dia[this.fecha.getDay()]}`
             }
         }
-        let fecha = new Fecha(12, 12, 2019)
-        console.log(fecha.getMeses())
-        console.log(fecha.getAños())
-        console.log(fecha.getSemana())
-        console.log(fecha.getDias())
+       
+        
