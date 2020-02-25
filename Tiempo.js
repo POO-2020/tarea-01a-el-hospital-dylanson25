@@ -2,7 +2,7 @@ export default class Tiempo{
     constructor(hora, minuto, periodo){
         this.hora = hora
         this.minutos = minuto
-        this.periodo = periodo
+        this.periodo = periodo.toUpperCase()
     }
     getFormato12(){
         if(this.periodo === "AM" && this.hora < 12){

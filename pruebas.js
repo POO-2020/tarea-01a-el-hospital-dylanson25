@@ -1,0 +1,6 @@
+import Nombre from "./Nombre.js"
+import Tiempo from "./Tiempo.js"
+import Fecha from "./Fecha.js"
+import Paciente from "./Paciente.js"
+import Doctor from "./Doctor.js"
+import Cita from "./Cita.js"

@@ -1,9 +1,4 @@
-import Nombre from "./Nombre.js"
-import Tiempo from "./Tiempo.js"
-import Fecha from "./Fecha.js"
-import Paciente from "./Paciente.js"
-import Doctor from "./Doctor.js"
-class Cita{
+export default class Cita{
     constructor(fecha, hora, doctor, paciente){
         this.fecha = fecha
         this.hora = hora

@@ -1,4 +1,4 @@
-class Nombre{
+export default class Nombre{
     constructor(nombre, apellidoP, apellidoM){
         this.nombre = nombre.toUpperCase() 
         this.apellidoM = apellidoM.toUpperCase() 
@@ -14,7 +14,3 @@ class Nombre{
         return `${this.nombre[0]}${this.apellidoP[0]}${this.apellidoM[0]}`
     }
 }
-let paciente = new Nombre("juan", "perez", "gonzales")
-  console.log(paciente.getNombreCompleto())
-  console.log(paciente.getApellidoNombre())
-  console.log(paciente.getIniciales())

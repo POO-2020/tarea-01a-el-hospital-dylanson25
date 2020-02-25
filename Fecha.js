@@ -40,7 +40,7 @@ export default class Fecha{
                 }
             } 
             getFecha3(){
-                return `${this.fecha.getDate()} / ${this.Mes[this.fecha.getMonth()]} / ${this.fecha.getUTCFullYear()}`
+                return `${this.fecha.getDate()}/${this.Mes[this.fecha.getMonth()]}/${this.fecha.getUTCFullYear()}`
             }
             getDiaFecha(){
                 return`${this.dia[this.fecha.getDay()]}`
