@@ -1,4 +1,10 @@
 export default class Nombre{
+    /**
+     * 
+     * @param {string} nombre 
+     * @param {string} apellidoP Apellido materno
+     * @param {string} apellidoM Apellido materno
+     */
     constructor(nombre, apellidoP, apellidoM){
         this.nombre = nombre.toUpperCase() 
         this.apellidoM = apellidoM.toUpperCase() 

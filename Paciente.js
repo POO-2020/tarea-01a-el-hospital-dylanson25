@@ -1,4 +1,10 @@
 export default class Paciente{
+    /**
+     * 
+     * @param {string} nombre 
+     * @param {number} fecha Fecha en la que se realizo la cita
+     * @param {number} numero numero para contactar al paciente
+     */
     constructor(nombre, fecha, numero){
         this.fecha = fecha
         this.nombre = nombre

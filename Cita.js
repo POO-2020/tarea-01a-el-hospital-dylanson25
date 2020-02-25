@@ -1,4 +1,11 @@
 export default class Cita{
+    /**
+     * 
+     * @param {number} fecha Fecha en que se realiso la cita 
+     * @param {number} hora  en la que se cito para la consulta
+     * @param {string} doctor  nombre del medico encargado
+     * @param {string} paciente nombre del paciente malito 
+     */
     constructor(fecha, hora, doctor, paciente){
         this.fecha = fecha
         this.hora = hora

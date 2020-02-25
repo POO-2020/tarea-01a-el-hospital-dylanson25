@@ -5,7 +5,7 @@ import Paciente from "./Paciente.js"
 import Doctor from "./Doctor.js"
 import Cita from "./Cita.js"
 class Hospital{
-    constructor(doctores, citas){
+    constructor(){
         this.nombre = "Hospital grays memorial"
         this.direccion = "Av. siempre viva 321"
         this.doctores = new Array() 
